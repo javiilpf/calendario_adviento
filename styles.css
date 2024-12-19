@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f000e8;
+    margin: 0;
+    padding: 20px;
+    transition: 2s;
+    background-image: url("./img/los_dosh.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    background-image: url("./img/osito_corazones.jpeg");
+    background-color: rgba(240, 248, 255, 0.5); /* Color de fondo semi-transparente */ 
+    background-blend-mode: overlay;
+    
+
+}
+
+.calendar-container, #not-january-page {
+    text-align: center;
+    width: 100%;
+    
+}
+
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+    margin-top: 600px;
+}
+
+button {
+    padding: 10px;
+    background-color: #e48def;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    transition: 1s;
+    background-color: #ed0ca2;
+}
+
+.hidden {
+    display: none;
+}
+
+#letter-container, #incorrect-day-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 2px solid #6200ea;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#not-january-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+    background-image: url('../img/osito_triste.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+

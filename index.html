@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Adviento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar-container" id="calendar-container">
+        <header>
+            <h1>Bienvenida a tu calendario de adviento</h1>
+            <p>Abajo te saldrán los botones para poder entrar a cada día cuando vaya tocando. </p>
+        </header>
+       
+        <div id="calendar">
+            <!-- Aquí se generarán los botones del calendario -->
+        </div>
+    </div>
+    <div id="letter-container" class="hidden">
+        <h2>Carta del Día</h2>
+        <p id="letter-content"></p>
+        <button onclick="closeLetter()">Cerrar</button>
+    </div>
+    <div id="not-january-page" class="hidden">
+        <h1>Todavía no es enero, mi vida.</h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
