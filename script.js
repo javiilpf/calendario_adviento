@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(data => {
             const letters = data.letters;
 
-            if (currentMonth === 11) { // 11 representa diciembre
+            if (currentMonth === 0) { // 11 representa diciembre
                 console.log("Es diciembre. Mostrando el calendario."); // Depuración
                 notJanuaryPage.style.display = "none"; // Ocultar el mensaje de no enero
                 calendarContainer.style.display = "block"; // Mostrar el calendario
