@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(data => {
             const letters = data.letters;
 
-            if (currentMonth === 0) { // 11 representa diciembre
-                console.log("Es diciembre. Mostrando el calendario."); // Depuración
+            if (currentMonth === 0) { // 0 representa enero
+                console.log("Es enero. Mostrando el calendario."); // Depuración
                 notJanuaryPage.style.display = "none"; // Ocultar el mensaje de no enero
                 calendarContainer.style.display = "block"; // Mostrar el calendario
 
@@ -71,14 +71,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     incorrectDayMessageContainer.classList.add("hidden");
                 };
             } else {
-                console.log("No es diciembre. Mostrando el mensaje de no enero."); // Depuración
+                console.log("No es enero. Mostrando el mensaje de no enero."); // Depuración
                 calendarContainer.style.display = "none"; // Ocultar el calendario
                 notJanuaryPage.style.display = "flex"; // Mostrar el mensaje de no enero
             }
         })
         .catch(error => console.error('Error al cargar las cartas:', error));
 });
-
 
 
 
